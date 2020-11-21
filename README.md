@@ -1,8 +1,12 @@
+> `main`分支主要是将多个子分支进行整合
+
+# `not-use-vuex`分支主要介绍不使用`vuex`插件的写法，介绍项目的优缺点，方便后续展开
+```markdown
 > 本分支主要介绍在不适用`Vuex`插件时，项目中会遇到哪些问题。
 
 # 项目概览
-<!-- <a href="https://github.com/Airpy/use-vuex/tree/not-use-vuex/src/img/project-not-use-vuex-summary.jpg" target="_blank"></a> -->
 ![若图片打不开,图片在@/img/summary.png](https://github.com/Airpy/use-vuex/tree/not-use-vuex/src/img/summary.jpg)
+
 # 实现了什么功能
 1. 页面展示两个tab标签
 2. 支持切换标签，并根据标签展示对应标签的内容(**这是本项目的重点**)
@@ -20,3 +24,6 @@
 # 本项目中的缺点：
 1. 共性的数据(state)无法统一管理或管理麻烦
 2. 兄弟组件无法直接更改数据
+```
+
+# `use-state-mutations`分支主要介绍在使用`state`及`mutations`时项目的变化
