@@ -2,7 +2,7 @@
 
 # 项目概览
 <!-- <a href="https://github.com/Airpy/use-vuex/tree/not-use-vuex/src/img/project-not-use-vuex-summary.jpg" target="_blank"></a> -->
-![image](https://github.com/Airpy/use-vuex/tree/not-use-vuex/src/img/summary.jpg)
+![若图片打不开,图片在@/img/summary.png](https://github.com/Airpy/use-vuex/tree/not-use-vuex/src/img/summary.jpg)
 # 实现了什么功能
 1. 页面展示两个tab标签
 2. 支持切换标签，并根据标签展示对应标签的内容(**这是本项目的重点**)
