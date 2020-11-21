@@ -1,7 +1,7 @@
 > 本分支主要介绍在不适用`Vuex`插件时，项目中会遇到哪些问题。
 
 # 项目概览
-<a href="https://github.com/Airpy/use-vuex/tree/main/src/img/project-not-use-vuex-summary.jpg" target="_blank"></a>
+<a href="https://github.com/Airpy/use-vuex/tree/not-use-vuex/src/img/project-not-use-vuex-summary.jpg" target="_blank"></a>
 # 实现了什么功能
 1. 页面展示两个tab标签
 2. 支持切换标签，并根据标签展示对应标签的内容(**这是本项目的重点**)
