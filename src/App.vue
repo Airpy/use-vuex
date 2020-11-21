@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <tab
+    <!-- <tab
       :curIdx='curIdx'
       @changeParentTab='changeTab'
     ></tab>
-    <page :curIdx=curIdx></page>
+    <page :curIdx=curIdx></page> -->
+    <tab />
+    <page />
   </div>
 </template>
 
 <script>
 import Tab from '@/components/Tab';
 import Page from '@/components/Page';
+import { mapMutations, mapState } from 'vuex';
 
 export default {
   name: 'App',
@@ -18,15 +21,19 @@ export default {
     Tab,
     Page
   },
-  data () {
-    return {
-      curIdx : 1
-    }
+  computed: {
+    ...mapState(['curIdx'])
   },
+  // data () {
+  //   return {
+  //     curIdx : 1
+  //   }
+  // },
   methods : {
-    changeTab (index) {
-      this.curIdx = index
-    }
+    // changeTab (index) {
+    //   this.curIdx = index
+    // }
+    ...mapMutations(['setCurIdx'])
   }
 }
 </script>
