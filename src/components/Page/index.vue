@@ -1,15 +1,20 @@
 <template>
   <div>
-    标签[{{ curIdx }}]的内容
+    标签[{{ curIdx }}]的内容: [{{ content }}]
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 export default {
   name: 'Page',
-  props: {
-    curIdx: Number
+  computed: {
+    ...mapState(['curIdx', 'content'])
   }
+  // props: {
+  //   curIdx: Number
+  // }
 }
 </script>
 
