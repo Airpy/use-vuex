@@ -116,7 +116,3 @@ computed: {
   }
 }
 ```
-
-## 3. 上述使用`getters`的完整代码
-
-点击：[github](https://github.com/Airpy/use-vuex/tree/use-getters)
