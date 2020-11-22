@@ -1,4 +1,4 @@
-> 官方文档路径：https://vuex.vuejs.org/zh/
+> 官方文档路径：https://vuex.vuejs.org/zh/  
 > 本项目博客地址：https://blog.csdn.net/Amio_/article/details/109923414
 
 # 一、Vuex简单介绍
