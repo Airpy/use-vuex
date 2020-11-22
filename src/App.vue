@@ -7,19 +7,22 @@
     <page :curIdx=curIdx></page> -->
     <tab />
     <page />
+    <feedback />
   </div>
 </template>
 
 <script>
 import Tab from '@/components/Tab';
 import Page from '@/components/Page';
+import Feedback from '@/components/Feedback';
 import { mapMutations, mapState } from 'vuex';
 
 export default {
   name: 'App',
   components: {
     Tab,
-    Page
+    Page,
+    Feedback
   },
   computed: {
     ...mapState(['curIdx'])
