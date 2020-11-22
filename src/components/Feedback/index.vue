@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import { mapState, mapActions } from 'vuex';
 
 export default {
   name: 'Feedback',
@@ -15,11 +15,21 @@ export default {
     this.$store.dispatch('getFeedbackData', {
       page: 1,
       limit: 10
+    }),
+    // 调用method完成绑定
+    // 个人建议：在有参数的派发actions时，使用以上方法更为简便一点。
+    this.getFeedbackData({
+      page: 1,
+      limit: 10
     })
   },
   // 获取state中的值
   computed: {
     ...mapState(['feedbackData'])
+  },
+  methods: {
+    // 也可以使用mapActions派发
+    ...mapActions(['getFeedbackData'])
   }
 }
 </script>
